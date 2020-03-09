@@ -54,7 +54,7 @@ namespace DiabetesNotes.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet("max/{day}/{month}")]
-        public async Task<List<Measurement>> GetMaxMeasurementOfADay(int day, int month)
+        public async Task<ICollection<Measurement>> GetMaxMeasurementOfADay(int day, int month)
         {
             try
             {
@@ -74,7 +74,7 @@ namespace DiabetesNotes.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet("min/{day}/{month}")]
-        public async Task<List<Measurement>> GetMinMeasurementOfADay(int day, int month)
+        public async Task<ICollection<Measurement>> GetMinMeasurementOfADay(int day, int month)
         {
             try
             {
@@ -113,7 +113,7 @@ namespace DiabetesNotes.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet("check/{day}/{month}")]
-        public async Task<List<Measurement>> CheckMeasurementsOfADay(int day, int month)
+        public async Task<ICollection<Measurement>> CheckMeasurementsOfADay(int day, int month)
         {
             try
             {

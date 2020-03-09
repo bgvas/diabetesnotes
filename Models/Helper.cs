@@ -32,13 +32,13 @@ namespace DiabetesNotes
             else return false;
         }
 
-        public static double CheckDifference(double Glucoze)
+        public static double DifferenceFromNormalGlucoze(double Glucoze)
         {
-            if (Glucoze < NORMAL_LOWER_GLUCOZE_LEVEL)
+            if (Glucoze < NORMAL_LOWER_GLUCOZE_LEVEL || Glucoze > NORMAL_UPPER_GLUCOZE_LEVEL)
             {
                 return Glucoze - NORMAL_LOWER_GLUCOZE_LEVEL;
             }
-            else return NORMAL_UPPER_GLUCOZE_LEVEL - Glucoze;
+            else return 0;
         }
     }
 }

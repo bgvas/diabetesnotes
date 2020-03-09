@@ -23,7 +23,7 @@ namespace DiabetesNotes.Controllers
     /// <seealso cref="Microsoft.AspNetCore.Mvc.ControllerBase" />
     [Route("api/[controller]")]
     [ApiController]
-    public class MeasurementController : ControllerBase
+    public class MeasurementController : ControllerBase 
     {
 
         public readonly DataBaseContext _context;
